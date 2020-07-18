@@ -1,3 +1,4 @@
+-- 八ヶ岳の山データ
 INSERT INTO mountain
   (name, altitude, note)
 VALUES
