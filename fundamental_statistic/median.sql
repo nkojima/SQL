@@ -1,3 +1,5 @@
+-- 中央値を求めるSQL
+
 -- 1. データの個数を求める。
 SELECT COUNT(*) INTO @row_count FROM mountain;
 
