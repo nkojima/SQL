@@ -1,5 +1,3 @@
-DELIMITER //
-​
 /*
  うるう年であるかを判定する関数。
  https://ja.wikipedia.org/wiki/%E9%96%8F%E5%B9%B4#%E3%82%B0%E3%83%AC%E3%82%B4%E3%83%AA%E3%82%AA%E6%9A%A6
@@ -7,6 +5,7 @@ DELIMITER //
  year：4桁の西暦年
  return：うるう年であれば1、それ以外の年は0を返す。
  */
+DELIMITER //
 CREATE FUNCTION is_leap_year(year INT) RETURNS BOOLEAN DETERMINISTIC
 BEGIN
   DECLARE result TINYINT;
