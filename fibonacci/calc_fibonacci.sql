@@ -11,25 +11,25 @@
 DELIMITER //
 CREATE FUNCTION calc_fibonacci(n INT) RETURNS INT DETERMINISTIC
 BEGIN
-  DECLARE result INT;
-  DECLARE next INT;
-  DECLARE temp INT;
-  DECLARE i INT;
+  DECLARE current INT; -- 現在の項のフィボナッチ数。
+  DECLARE next INT;    -- 次の項のフィボナッチ数。
+  DECLARE buff INT;    -- 「現在の項のフィボナッチ数」を一時退避させるためのバッファ。
+  DECLARE i INT;       -- ループのカウンタ変数。
   
-  SET result = 0;
+  SET current = 0;
   SET next = 1;
-  SET temp = 0;
+  SET buff = 0;
   SET i = 0;
 
   WHILE i < n DO
-    SET temp = result;
-    SET result = next;
-    SET next = temp + next;
+    SET buff = current;
+    SET current = next;
+    SET next = buff + next;
     
     SET i = i + 1;
   END WHILE;
 
-  RETURN(result);
+  RETURN(current);
 END;
 //
 ​
