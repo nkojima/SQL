@@ -2,7 +2,7 @@
 
 # Features
 
-This repository is for studying SQL.
+This repository is for studying MySQL.
 
 # folders
 
@@ -32,4 +32,4 @@ nkojima
 
 # License
 
-"Excel VBA Library" is under MIT license.
+"SQL" is under MIT license.
