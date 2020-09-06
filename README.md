@@ -1,35 +1,35 @@
 # SQL
 
-# Features
+## Features
 
 This repository is for studying MySQL.
 
-# folders
+## folders
 
-## fibonacci
+### fibonacci
 
 - Calculate the Fibonacci number without recursive processing.
 
-## fundamental_statistic
+### fundamental_statistic
 
 - Calculate fundamental statistics using altitude data of Yatsugatake, Japan.
 
-## jp_cities
+### jp_cities
 
 - Calculate distance between Japanese major cities.
 
-## leap_year
+### leap_year
 
 - Determines whether a year is a leap year or a common year in the Gregorian calendar.
 
-# Requirement
+## Requirement
 
 - MySQL 8.0 or later.
 
-# Author
+## Author
 
 nkojima
 
-# License
+## License
 
 "SQL" is under MIT license.
